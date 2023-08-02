@@ -1,5 +1,5 @@
 const axios = require('axios');
-const GetToken = require("./GetToken");
+const GetToken = require("../utils/getToken");
 
 async function SpecificTrain(req, res) {
   try {

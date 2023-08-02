@@ -8,10 +8,10 @@ router.get('/' , (req,res) =>{
         .json({message : "testing"})
 }) 
 
-
-
-router.get("/trains")
-router.get("/trains/:id")
+const AllTrains = require("../controllers/AllTrains")
+const SpecificTrain = require("../controllers/SpecificTrain")
+router.get("/trains" ,AllTrains )
+router.get("/trains/:id", SpecificTrain)
 module.exports = router
 
 

@@ -1,21 +1,10 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./App.js";
 
-import Home from "./components/Home";
+import { BrowserRouter as Router } from "react-router-dom";
 
-
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" >
-          <Route index element={<Home />} />
-     
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <Router>
+    <App />
+  </Router>
+);
