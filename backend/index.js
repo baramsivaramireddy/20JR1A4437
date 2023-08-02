@@ -13,7 +13,9 @@ app.use((req,res,next) =>{
 })
 
 const router = require("./routes/index")
-app.use('/' ,)
+app.use('/' ,router)
+
+
 app.listen(PORT , ()=> {
     console.log(`server started at port ${PORT}`)
 })

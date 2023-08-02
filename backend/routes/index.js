@@ -1,4 +1,4 @@
-const router = requrie("express").Router();
+const router = require("express").Router();
 
 
 router.get('/' , (req,res) =>{
@@ -8,6 +8,10 @@ router.get('/' , (req,res) =>{
         .json({message : "testing"})
 }) 
 
+
+
+// router.get("/trains")
+// router.get("/trains/:id")
 module.exports = router
 
 
